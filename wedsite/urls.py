@@ -1,4 +1,4 @@
-from django.conf.urls import url, include
+from django.urls import re_path as url, include
 from django.http import Http404
 from wedsite.views import (
     StaticView, StaticViewNoAuth, RSVPView, CreateAccountView

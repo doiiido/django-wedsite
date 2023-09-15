@@ -1,13 +1,13 @@
-dj-database-url==0.4.1
-Django==1.11
-gunicorn==19.6.0
-psycopg2==2.7.3
-whitenoise==3.3.0
-requests==2.9.1
--e git+https://github.com/rylz/django-easy-maps.git@ba9eb05be7eb0fe09888ccc5bef211faeb3873e3#egg=django-easy-maps
-raven>=3
-django-tz-detect==0.2.8
-django-inlinecss==0.1.2
+dj-database-url
+Django
+gunicorn
+psycopg2
+whitenoise
+requests
+django-easy-maps
+raven
+django-tz-detect
+django-inlinecss
 lorem
 django-appconf
 django-user_agents

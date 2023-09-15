@@ -103,15 +103,18 @@ class RSVPPerson(models.Model):
         help_text="RSVP Person's name")
 
     # Person's event attendance status
-    is_attending_rehearsal = models.NullBooleanField(
+    is_attending_rehearsal = models.BooleanField(
+        blank=True,
         default=None,
         help_text="RSVP Status for Rehearsal Dinner")
-    is_attending_wedding = models.NullBooleanField(
+    is_attending_wedding = models.BooleanField(
+        blank=True,
         default=None,
         help_text="RSVP Status for Sunday Wedding Ceremony & Reception")
 
     # Person's Child status.
-    is_child = models.NullBooleanField(
+    is_child = models.BooleanField(
+        blank=True,
         default=None,
         help_text="TRUE if person is a child")
 

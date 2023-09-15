@@ -42,9 +42,9 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(help_text="RSVP Person's name", max_length=128)),
-                ('is_attending_rehearsal', models.NullBooleanField(default=None, help_text='RSVP Status for Rehearsal Dinner')),
-                ('is_attending_wedding', models.NullBooleanField(default=None, help_text='RSVP Status for Sunday Wedding Ceremony & Reception')),
-                ('is_child', models.NullBooleanField(default=None, help_text='TRUE if person is a child')),
+                ('is_attending_rehearsal', models.BooleanField(blank=True,default=None, help_text='RSVP Status for Rehearsal Dinner')),
+                ('is_attending_wedding', models.BooleanField(blank=True,default=None, help_text='RSVP Status for Sunday Wedding Ceremony & Reception')),
+                ('is_child', models.BooleanField(blank=True,default=None, help_text='TRUE if person is a child')),
                 ('dietary_kosher', models.BooleanField(default=False, help_text='Kosher Dietary Restriction')),
                 ('dietary_vegetarian', models.BooleanField(default=False, help_text='Vegetarian Dietary Restriction')),
                 ('dietary_vegan', models.BooleanField(default=False, help_text='Vegan Dietary Restriction')),

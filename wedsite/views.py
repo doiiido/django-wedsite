@@ -4,11 +4,11 @@ from __future__ import unicode_literals
 from django.views.generic.edit import FormView, UpdateView
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.views import View
 from django.utils.decorators import method_decorator
 from django.contrib.auth.views import (
-    redirect_to_login, SuccessURLAllowedHostsMixin)
+    redirect_to_login, RedirectURLMixin as SuccessURLAllowedHostsMixin)
 from django.contrib.auth import (
     authenticate, login)
 from django.contrib.auth.models import User

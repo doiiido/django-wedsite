@@ -11,6 +11,10 @@ getting married Gride and Broom.
 """
 import datetime
 import lorem
+import django
+from django.utils.encoding import smart_str
+django.utils.encoding.smart_text = smart_str
+
 
 #
 # Gride and Broom
