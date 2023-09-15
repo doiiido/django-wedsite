@@ -8,5 +8,5 @@ db.sqlite3
 dist/*
 *.egg-info
 build/*
-
+.venv
 /Pipfile

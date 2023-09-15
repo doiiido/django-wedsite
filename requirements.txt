@@ -1,7 +1,7 @@
 dj-database-url
 Django
 gunicorn
-psycopg2
+psycopg2>2.8
 whitenoise
 requests
 django-easy-maps
